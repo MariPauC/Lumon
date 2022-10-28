@@ -1,14 +1,13 @@
 {
   "dependencies": {
     "com.google.xr.cardboard": {
-      "version": "https://github.com/googlevr/cardboard-xr-plugin.git",
+      "version": "file:C:/Users/Daniel A Silva F/Desktop/UMNG/2022-2/APP 3D/Nueva carpeta/cardboard-xr-plugin-v.1.17.0",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.unity.xr.management": "3.2.9",
         "com.unity.xr.legacyinputhelpers": "2.1.4"
-      },
-      "hash": "f14b4d14683bd379b1502f466b402d6fc2ad1cf7"
+      }
     },
     "com.unity.collab-proxy": {
       "version": "1.17.2",
