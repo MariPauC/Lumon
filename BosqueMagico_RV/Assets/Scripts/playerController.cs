@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
-    private float velocidad = 10f;
+    private float velocidad = 0.2f;
+    public Rigidbody rb;
 
-    void Start()
-    {
-        
+    void Start(){
+        rb = GetComponent<Rigidbody> ();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
+        float h = Input.GetAxis("Horizontal");
+
+        if(h > 0){
+            transform.Translate(Vector3.right * velocidad * Time.deltaTime);
+        }
+        if(h < 0){
+            transform.Translate(Vector3.left * velocidad * Time.deltaTime);
+        }
     }
 }
