@@ -22,4 +22,10 @@ public class playerController : MonoBehaviour
             transform.Translate(Vector3.left * velocidad * Time.deltaTime);
         }
     }
+
+    private void OnCollisionEnter(Collision collision){
+        if(collision.transform.CompareTag("detener")){
+            velocidad = 0; 
+        }
+    }
 }

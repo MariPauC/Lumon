@@ -8,6 +8,12 @@ TagManager:
   - manzana
   - nuez
   - comida
+  - mn_opciones
+  - navegacionMn
+  - mn_inicial
+  - mn_creditos
+  - detener
+  - obstaculos
   layers:
   - Default
   - TransparentFX
