@@ -13,4 +13,8 @@ public class mnObstaculos : MonoBehaviour
     {
         SceneManager.LoadScene("Comida");
     }
+    public void obstBtn()
+    {
+        SceneManager.LoadScene("Obstaculos");
+    }
 }
