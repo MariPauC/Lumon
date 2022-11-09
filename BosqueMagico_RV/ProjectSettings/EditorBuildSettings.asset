@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus.unity
     guid: edef22b8b40984945b71aeb0547db5e6
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Perdido.unity
     guid: 282d3b50b27779846b56b812c2720a4a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Obstaculos.unity
     guid: da340d68c8b51d0499bbab3515df4c4f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Comida.unity
     guid: af67236671a14994faae4b86d1a6b716
   m_configObjects:
