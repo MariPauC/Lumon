@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
+    
     public float velocidad = 0.2f; //Velocidad de movimiento
     public bool movFrontal = false; 
     public bool movLateral = true; 

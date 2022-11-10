@@ -38,7 +38,7 @@ public class MenuController : MonoBehaviour{
         ventana1.SetActive(true);
     }
 
-    void ocultarVentanas(){
+    private void ocultarVentanas(){
         ventana1.SetActive(false);
         ventana3.SetActive(false);
         ventana4.SetActive(false);
