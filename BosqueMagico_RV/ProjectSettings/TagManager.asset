@@ -14,6 +14,7 @@ TagManager:
   - mn_creditos
   - detener
   - obstaculos
+  - subtitulo
   layers:
   - Default
   - TransparentFX
