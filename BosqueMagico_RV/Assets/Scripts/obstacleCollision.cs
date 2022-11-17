@@ -13,6 +13,7 @@ public class obstacleCollision : MonoBehaviour{
            if (visible){
                 contadorPuntos();
                 StartCoroutine(desaparecer());
+                Destroy(collision.gameObject);
            }
         }
     }

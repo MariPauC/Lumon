@@ -15,6 +15,7 @@ TagManager:
   - detener
   - obstaculos
   - subtitulo
+  - borrador
   layers:
   - Default
   - TransparentFX
