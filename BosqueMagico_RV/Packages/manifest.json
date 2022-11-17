@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.google.xr.cardboard": "file:C:/Users/Daniel A Silva F/Desktop/UMNG/2022-2/APP 3D/Nueva carpeta/cardboard-xr-plugin-v.1.17.0",
+    "com.google.xr.cardboard": "file:C:/Users/juanf/Documents/Conf. unity/cardboard-xr-plugin-1.18.1",
     "com.unity.collab-proxy": "1.17.6",
     "com.unity.ide.rider": "3.0.15",
     "com.unity.ide.visualstudio": "2.0.16",
