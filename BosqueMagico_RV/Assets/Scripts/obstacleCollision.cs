@@ -4,17 +4,19 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class obstacleCollision : MonoBehaviour{
+    public AudioSource sound;
+    public AudioClip soundCollision;
+    public float volumen = 1f;
+    
     private int puntaje = 100;
     private bool visible = true; 
     
     //Comprobar si existe choque con el jugador 
     private void OnCollisionEnter(Collision collision){
         if(collision.transform.CompareTag("obstaculos")){
-           if (visible){
-                contadorPuntos();
-                StartCoroutine(desaparecer());
-                Destroy(collision.gameObject);
-           }
+           contadorPuntos();
+           Destroy(collision.gameObject);
+           playSound();
         }
     }
 
@@ -32,7 +34,7 @@ public class obstacleCollision : MonoBehaviour{
         visible = true;
     }
 
-    private void sound(){
-
+    private void playSound(){
+        sound.PlayOneShot(soundCollision, volumen);
     }
 }
