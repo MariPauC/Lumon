@@ -20,7 +20,7 @@ public class borradorController : MonoBehaviour
         if(collision.transform.CompareTag("obstaculos")){
             Destroy(collision.gameObject);
         }
-        if(collision.transform.CompareTag("Player")){
+        if(collision.transform.CompareTag("detener")){
             Destroy(gameObject); 
         }
     }
