@@ -1967,6 +1967,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1688463320521947846, guid: 181fc7cbd23a5df4dae2162173a9504d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 5436602406996836237, guid: 181fc7cbd23a5df4dae2162173a9504d, type: 3}
       propertyPath: m_Name
       value: Cuerpo
@@ -1977,7 +1981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036020306488732948, guid: 181fc7cbd23a5df4dae2162173a9504d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.531
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 9036020306488732948, guid: 181fc7cbd23a5df4dae2162173a9504d, type: 3}
       propertyPath: m_LocalPosition.y
