@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
-    
     public float velocidad = 0.2f; //Velocidad de movimiento
     public bool movFrontal = false; 
     public bool movLateral = true; 
+
+    //sonido
+    public AudioSource sound;
+    public AudioClip soundVictory;
+    public float volumen = 1f;
     
     public Rigidbody rb;
 
@@ -53,6 +57,11 @@ public class playerController : MonoBehaviour
     private void OnCollisionEnter(Collision collision){
         if(collision.transform.CompareTag("detener")){
             velocidad = 0; 
+            playSound();
         }
+    }
+
+    private void playSound(){
+        sound.PlayOneShot(soundVictory, volumen);
     }
 }
