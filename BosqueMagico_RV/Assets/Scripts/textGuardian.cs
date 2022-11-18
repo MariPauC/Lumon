@@ -6,25 +6,29 @@ using TMPro;
 public class textGuardian : MonoBehaviour{
     public TextMeshProUGUI dialogueText;
     public string[] lines;
-    public float textSpeed =0.1f;
+    public float textSpeed =0.2f;
     
     int index; 
 
-    private bool alreadyTalk = false; 
+    private int alreadyTalk = 0; 
+
 
     // Update is called once per frame
     void Update()
     {
         if(dialogueText.text == lines[index]){
-            StartCoroutine(wait());
+            //StartCoroutine(wait());
             NextLine(); 
         }
     }
 
     private void OnCollisionEnter(Collision collision){
         if(collision.transform.CompareTag("Player")){
-            dialogueText.text = string.Empty;
-            playDialogue();
+            if(alreadyTalk <= 0){
+                dialogueText.text = string.Empty;
+                playDialogue();
+                Destroy(gameObject.GetComponent<Collider>());
+            }
         }
     }
     

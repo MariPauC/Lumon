@@ -19,16 +19,16 @@ public class talkCharacter : MonoBehaviour
     {
         //Encontrar las ventanas de menu
         dialogo = GameObject.FindGameObjectWithTag("conversar");
-        //dialogo.SetActive(false);
+        dialogo.SetActive(false);
     }
 
     private void OnCollisionEnter(Collision collision){
-        if(collision.transform.CompareTag("hablar")){
+        if(collision.transform.CompareTag("Player")){
             if(yaHablo <= 0){
-                //dialogo.SetActive(true);
                 yaHablo = yaHablo + 1;
-                playSound(); 
+                dialogo.SetActive(true);
             }
+            
         }
     }
 
