@@ -17,6 +17,8 @@ TagManager:
   - subtitulo
   - borrador
   - guardian
+  - hablar
+  - conversar
   layers:
   - Default
   - TransparentFX
