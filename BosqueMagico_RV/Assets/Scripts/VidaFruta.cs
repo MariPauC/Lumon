@@ -17,7 +17,7 @@ public class VidaFruta : MonoBehaviour
         {
             Player.GetComponent<DatosJugador>().vidaPlayer += AunmVida; 
             Emite.PlayOneShot(elSonido, volimen);
-            Destroy(gameObject, 0.2f);
+            //Destroy(gameObject, 0.2f);
         }
     }
 }
