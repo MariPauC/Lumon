@@ -28,12 +28,6 @@ public class obstacleCollision : MonoBehaviour{
         }
     }
 
-    IEnumerator desaparecer(){
-        visible = false;
-        yield return new WaitForSeconds(2);
-        visible = true;
-    }
-
     private void playSound(){
         sound.PlayOneShot(soundCollision, volumen);
     }
