@@ -7,6 +7,7 @@ public class talkingCharacters : MonoBehaviour{
     public TextMeshProUGUI dialogueText;
     public string[] lines;
     public float textSpeed =0.1f;
+    public float timeText = 4f;
     
     int index; 
 
@@ -19,12 +20,14 @@ public class talkingCharacters : MonoBehaviour{
         dialogo.SetActive(false);
     }
 
-
     // Update is called once per frame
     void Update(){
-        if(dialogueText.text == lines[index]){
-            StartCoroutine(wait());
-            NextLine(); 
+        timeText -= Time.deltaTime;
+        if(timeText <= 0){
+            if(dialogueText.text == lines[index]){
+                NextLine();
+            }
+            timeText = 4f;
         }
     }
 
@@ -40,13 +43,7 @@ public class talkingCharacters : MonoBehaviour{
     public void playDialogue(){
         index=0; 
         dialogueText.text = string.Empty;
-        StartCoroutine(WriteLine());
-    }
-
-    IEnumerator wait(){
-        yield return new WaitForSeconds(10f);
-
-        Debug.Log("Perate wey");
+        StartCoroutine(WriteLine()); 
     }
 
     IEnumerator WriteLine(){
