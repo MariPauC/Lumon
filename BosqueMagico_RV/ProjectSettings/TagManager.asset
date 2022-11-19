@@ -19,6 +19,7 @@ TagManager:
   - guardian
   - hablar
   - conversar
+  - victoria
   layers:
   - Default
   - TransparentFX

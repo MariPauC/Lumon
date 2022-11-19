@@ -57,7 +57,10 @@ public class playerController : MonoBehaviour
     private void OnCollisionEnter(Collision collision){
         if(collision.transform.CompareTag("detener")){
             velocidad = 0; 
+        }
+        if(collision.transform.CompareTag("victoria")){
             playSound();
+            Destroy(collision.gameObject.GetComponent<Collider>());
         }
     }
 

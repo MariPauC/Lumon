@@ -8,7 +8,7 @@ public class talkingCharacters : MonoBehaviour{
     public string[] lines;
     public float textSpeed =0.1f;
     
-    private float timeText = 4f;
+    private float timeText = 3f;
 
     int index; 
 
@@ -21,7 +21,6 @@ public class talkingCharacters : MonoBehaviour{
         dialogo.SetActive(false);
     }
 
-
     // Update is called once per frame
     void Update(){
         timeText -= Time.deltaTime;
@@ -29,7 +28,7 @@ public class talkingCharacters : MonoBehaviour{
             if(dialogueText.text == lines[index]){
                 NextLine();
             }
-            timeText = 4f;
+            timeText = 3f;
         }
     }
 
@@ -46,12 +45,6 @@ public class talkingCharacters : MonoBehaviour{
         index=0; 
         dialogueText.text = string.Empty;
         StartCoroutine(WriteLine());
-    }
-
-    IEnumerator wait(){
-        yield return new WaitForSeconds(10f);
-
-        Debug.Log("Perate wey");
     }
 
     IEnumerator WriteLine(){
