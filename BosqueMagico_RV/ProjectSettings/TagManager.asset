@@ -20,6 +20,7 @@ TagManager:
   - hablar
   - conversar
   - victoria
+  - botones
   layers:
   - Default
   - TransparentFX

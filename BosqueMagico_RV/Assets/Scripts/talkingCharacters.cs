@@ -14,11 +14,14 @@ public class talkingCharacters : MonoBehaviour{
 
     //ventana
     GameObject dialogo;
+    GameObject boton;
 
     void Start(){
         //Encontrar las ventanas de menu
         dialogo = GameObject.FindGameObjectWithTag("subtitulo");
+        boton = GameObject.FindGameObjectWithTag("botones");
         dialogo.SetActive(false);
+        boton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -61,7 +64,8 @@ public class talkingCharacters : MonoBehaviour{
             StartCoroutine(WriteLine());
         }
         else{
-            gameObject.SetActive(false);
+            dialogo.SetActive(false);
+            boton.SetActive(true);
         }
     }
     
