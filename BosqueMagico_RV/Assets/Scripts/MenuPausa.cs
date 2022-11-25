@@ -35,4 +35,13 @@ public class MenuPausa : MonoBehaviour
         SceneManager.LoadScene("Menus");
     }
 
+    public void Cambio()
+    {
+        SceneManager.LoadScene("Obstaculos");
+    }
+
+    public void SegCambio()
+    {
+        SceneManager.LoadScene("Comida");
+    }
 }
