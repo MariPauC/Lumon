@@ -38,6 +38,10 @@ public class MenuController : MonoBehaviour{
         ventana1.SetActive(true);
     }
 
+    public void salirBtn(){
+        Application.Quit();
+    }
+
     private void ocultarVentanas(){
         ventana1.SetActive(false);
         ventana3.SetActive(false);

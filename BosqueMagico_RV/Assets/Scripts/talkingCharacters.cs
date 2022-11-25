@@ -4,10 +4,16 @@ using UnityEngine;
 using TMPro;
 
 public class talkingCharacters : MonoBehaviour{
+    //Sonido
+    public AudioSource sound;
+    public AudioClip characterVoice;
+    public float volumen = 1f;
+    
+    //Texto
     public TextMeshProUGUI dialogueText;
     public string[] lines;
     public float textSpeed =0.1f;
-    
+
     private float timeText = 3f;
 
     int index; 
@@ -40,6 +46,7 @@ public class talkingCharacters : MonoBehaviour{
             dialogo.SetActive(true);
             dialogueText.text = string.Empty;
             playDialogue();
+            playSound();
             Destroy(gameObject.GetComponent<Collider>());
         }
     }
@@ -69,4 +76,7 @@ public class talkingCharacters : MonoBehaviour{
         }
     }
     
+    private void playSound(){
+        sound.PlayOneShot(characterVoice, volumen);
+    }
 }
