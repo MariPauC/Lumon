@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1708393142}
-  m_IndirectSpecularColor: {r: 0.11269497, g: 0.28154624, b: 0.7091796, a: 1}
+  m_IndirectSpecularColor: {r: 0.11270057, g: 0.28156355, b: 0.70917577, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1439,7 +1439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 22.5766}
+  m_AnchoredPosition: {x: 143, y: 22.5766}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1609986646
@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Te has perdido
+  m_text: "Has Ganado!\t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f7083ee86da6e84480cc2a31b208aa0, type: 2}
   m_sharedMaterial: {fileID: -7810235951449451599, guid: 8f7083ee86da6e84480cc2a31b208aa0, type: 2}
@@ -1940,7 +1940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Al chocar con muchos objetos pierdes el camino
+  m_text: Tomaste la cantidad de frutas que necesitabas para ganar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

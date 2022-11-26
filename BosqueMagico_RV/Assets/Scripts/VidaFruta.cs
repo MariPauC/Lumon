@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VidaFruta : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class VidaFruta : MonoBehaviour
             Player.GetComponent<DatosJugador>().vidaPlayer += AunmVida; 
             Emite.PlayOneShot(elSonido, volimen);
             //Destroy(gameObject, 0.2f);
+            if (AunmVida == 100)
+            {
+                SceneManager.LoadScene("Ganado");
+            }
         }
     }
 }
