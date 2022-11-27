@@ -12,9 +12,9 @@ public class talkingCharacters : MonoBehaviour{
     //Texto
     public TextMeshProUGUI dialogueText;
     public string[] lines;
-    public float textSpeed =0.1f;
+    public float textSpeed =0.08f;
 
-    private float timeText = 3f;
+    private float timeText = 11f;
 
     int index; 
 
@@ -37,7 +37,7 @@ public class talkingCharacters : MonoBehaviour{
             if(dialogueText.text == lines[index]){
                 NextLine();
             }
-            timeText = 3f;
+            timeText = 5f;
         }
     }
 
