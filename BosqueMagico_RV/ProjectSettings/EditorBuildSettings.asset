@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/juego.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: Assets/Scenes/Menus.unity
     guid: edef22b8b40984945b71aeb0547db5e6
+  - enabled: 1
+    path: Assets/Scenes/juego.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Perdido.unity
     guid: 282d3b50b27779846b56b812c2720a4a
@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Comida.unity
     guid: af67236671a14994faae4b86d1a6b716
+  - enabled: 1
+    path: Assets/Scenes/Ganado.unity
+    guid: c60f8267a6f84e04c935b33928eb4dc9
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ef70db396aaae3740a77b6703c712dff, type: 2}
